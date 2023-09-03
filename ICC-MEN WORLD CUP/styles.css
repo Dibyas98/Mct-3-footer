@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --icc-men-world-cup-container-background-color:rgb(50,0,115);
+    --rough-border:2px solid red;
+}
+
+.dibya-icc-container{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--icc-men-world-cup-container-background-color);
+    width: 100%;
+    height: auto;
+
+}
+.dibya-icc-2023-inside-container{
+    height: 114.32px;
+    width: 80%;
+    margin: 0 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dibya-icc-2023-inside-container img{
+    width: 940px;
+    height: 78.325px;
+    border-radius: 1rem;
+}
+/* ====================================================================================================================================================================================================== */
+
+
+
+
+.dibya-view-all-match{
+    height: 192.32px;
+    width: 80%;
+    padding-top: 5px;
+    margin: 0 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dibya-view-all-match img{
+    height: 156.66px;
+    width: 940px;
+}
+.dibya-flag-container{
+    width: 80%;
+    height: 781px;
+    margin: 0 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dibya-flag-heading,.dibya-match-by-venue-heading{
+    width: 940px;
+}
+.dibya-flag-heading h2,.dibya-match-by-venue-heading h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.dibya-flag-image{
+    width: 940px;
+    height: 701px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+.dibya-flag-image img{
+    width: 223px;
+    height: 223px;
+}
+
+/* ============================================================================================================================================================================================== */
+
+
+
+
+
+.dibya-match-by-venue{
+    width: 80%;
+    height: 781px;
+    padding-top: 20px;
+    margin: 0 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dibya-match-by-venue-image{
+    width: 940px;
+    height: 701px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.dibya-match-by-venue-image img{
+    width: 223px;
+    height: 223px;
+}
+/* =============================================================================================================================================== */
+
+
+
+.dibya-patner{
+    height: 216.66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dibya-patner-image{
+    height: 216.66px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dibya-patner-image img{
+    width: 940px;
+    height: 156.66px;
+}
+
+
+/* BLUE BACKGROUND ENDED */
+
+/* =================================================================================================================================== */
+
+/* WHITE BACKGROUND STARTED */
+
+.dibya-present-bar{
+    background-color: white;
+    height: 44.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dibya-present-bar-inside{
+    height: 44.4px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 0.5rem;
+
+}
+.dibya-present-bar-inside a{
+    text-decoration: none;
+    color: RGB(170, 171, 172);
+    font-size: 0.8rem;
+    
+
+}
+.dibya-present-bar-inside div i{
+    color:RGB(170, 171, 172);
+
+}
+
+
+
+
+/* =============================================================================================================================================================================================== */
+
+
+.dibya-icc-world-cup-last{
+    height: auto;
+    background-color: rgb(242,242,242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dibya-icc-world-cup-inside{
+    width: 80%;
+    height: autogit ;
+}
+.dibya-icc-world-cup-inside-heading{
+    height: 39px;
+}
+
+.dibya-icc-world-cup-inside-heading h1{
+    height: 19.8px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 19.8px;
+    color: #7f7f7f;
+    text-align: center;
+}
+.dibya-inside-icc-para-2{
+    height: 35px;
+    color: #7F7F7F;
+    line-height: 16px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px 0px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default;
+}
+
+.dibya-inside-icc-para-2 a{
+    text-decoration: none;
+    color: #DC3558;
+}
+.dibya-inside-icc-para-1{
+    height: 23px;
+    color: #7F7F7F;
+    line-height: 16px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px 0px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default;
+}
+
+/* ================================================================================================== */

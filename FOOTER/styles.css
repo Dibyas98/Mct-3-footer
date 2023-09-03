@@ -195,7 +195,7 @@ footer {
 }
 
 .dibya-footer-inside-main {
-    width: 80%;
+    width: 80vw;
     height: 1073px;
     display: flex;
     flex-direction: column;

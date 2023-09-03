@@ -83,8 +83,9 @@ footer {
 
 .dibya-footer-inside-head-part-4 button {
     width: 135px;
-    height: 39px;
+    height: 39.9px;
     background-color: var(--footer-head-button-coolor);
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -394,8 +395,12 @@ span{
     align-items: center;
     gap: 0.5rem;
 }
+.dibya-social-midia{
+    border-radius: 2rem;
+    overflow: hidden;
+}
 .dibya-footer-icons i{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var();
 }
 .dibya-last-foot{
@@ -405,5 +410,8 @@ span{
     text-align: center;
 }
 a:hover{
+    color: white;
+}
+i:hover{
     color: white;
 }

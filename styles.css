@@ -86,6 +86,7 @@ footer {
     height: 39px;
     background-color: var(--footer-head-button-coolor);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .dibya-footer-inside-head-part-4 button a {
@@ -112,14 +113,14 @@ footer {
 }
 
 .dibya-inside-helpline,
-.dibya-comform-ticket {
+.dibya-comform-ticket,.dibya-customer-care {
     width: 65%;
     height: 80px;
     display: flex;
     justify-content: space-between;
 }
 
-.dibya-inside-helpline .dibya-customer-care {
+.dibya-customer-care {
     width: 114px;
     height: 100%;
     color: var(--footer-head-font-color);
@@ -132,7 +133,7 @@ footer {
 
 }
 
-.dibya-inside-helpline .dibya-customer-care svg,
+.dibya-customer-care svg,
 .dibya-comform-ticket svg,
 .dibya-newsletter svg {
     width: 50px;
@@ -140,7 +141,7 @@ footer {
     color: RGB(153, 153, 153);
 }
 
-.dibya-inside-helpline .dibya-customer-care a,
+.dibya-customer-care a,
 .dibya-comform-ticket a,
 .dibya-newsletter a {
     text-transform: uppercase;
@@ -194,7 +195,7 @@ footer {
 }
 
 .dibya-footer-inside-main {
-    width: 75%;
+    width: 80%;
     height: 1073px;
     display: flex;
     flex-direction: column;

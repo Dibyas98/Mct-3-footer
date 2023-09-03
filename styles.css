@@ -128,6 +128,7 @@ footer {
     align-items: center;
     justify-items: space-between;
     gap: 1rem;
+    transition: 0.4s ease-in-out;
 
 }
 
@@ -189,6 +190,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--footer-main-background-color);
+    
 }
 
 .dibya-footer-inside-main {
@@ -360,6 +362,7 @@ footer {
     text-decoration: var(--footer-main-a-text-decoration);
     color: var(--footer-main-a-color);
     letter-spacing: var(--footer-main-a-letter-spacing);
+    transition:0.4s ease-in-out;
 }
 
 span{
@@ -368,6 +371,7 @@ span{
     text-decoration: var(--footer-main-a-text-decoration);
     color: var(--footer-main-a-color);
     letter-spacing: var(--footer-main-a-letter-spacing);
+    cursor: default;
 }
 
 .dibya-logo-bookmyshow{
@@ -398,4 +402,7 @@ span{
     font-size: 11px;
     color: rgb(102, 102, 102);
     text-align: center;
+}
+a:hover{
+    color: white;
 }

@@ -176,7 +176,10 @@ footer {
     justify-items: space-between;
     gap: 1rem;
 }
-
+/* .dibya-customer-care>a>svg:hover{
+    fill: white;
+    color: white;
+} */
 .dibya-customer-care svg:hover,.dibya-newsletter svg:hover,.dibya-comform-ticket svg:hover{
     fill: white;
     color: white;
@@ -391,8 +394,13 @@ footer {
 .dibya-logo-add{
     height: 125px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+.dibya-hr{
+    height: 0.9px;
+    background-color: #5D5D5F;
+    width: 660px;
 }
 .dibya-footer-icons{
     height: 39.4px;
@@ -404,9 +412,11 @@ footer {
 .dibya-social-midia{
     border-radius: 2rem;
     overflow: hidden;
+    color: #5D5D5F;
 }
 .dibya-footer-icons i{
-    font-size: 2.5rem;
+    border-radius: 3rem;
+    font-size: 2rem;
     color: var();
 }
 .dibya-last-foot{

@@ -467,6 +467,7 @@ footer a:hover{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     min-width: 1024px;
 }
@@ -476,6 +477,7 @@ footer a:hover{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    border: var(--footer-border-for-test);
     
 }
 /* .dibya-home{

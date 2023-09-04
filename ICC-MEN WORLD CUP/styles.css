@@ -944,15 +944,17 @@ footer a:hover{
 
 
 .dibya-footer-media{
-    /* position: relative;
-    bottom: 200vh; */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    cursor: pointer;
-    min-width: 1024px;
+        /* position: relative;
+        bottom: 200vh; */
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        min-width: 1440px;
+    
 }
 .dibya-footer-media-inside-container{
     width: 80%;

@@ -21,6 +21,9 @@ body {
     height: auto;
 
 }
+.dibya-icc-container img{
+    cursor: pointer;
+}
 .dibya-icc-2023-inside-container{
     height: 114.32px;
     width: 80%;
@@ -131,6 +134,7 @@ body {
 .dibya-patner-image img{
     width: 940px;
     height: 156.66px;
+    cursor: pointer;
 }
 
 

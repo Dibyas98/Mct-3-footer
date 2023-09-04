@@ -139,8 +139,9 @@ footer {
 .dibya-newsletter svg {
     width: 50px;
     height: 50px;
-    color: RGB(153, 153, 153);
+    fill: RGB(153, 153, 153);
 }
+
 
 .dibya-customer-care a,
 .dibya-comform-ticket a,
@@ -174,6 +175,11 @@ footer {
     align-items: center;
     justify-items: space-between;
     gap: 1rem;
+}
+
+.dibya-customer-care svg:hover,.dibya-newsletter svg:hover,.dibya-comform-ticket svg:hover{
+    fill: white;
+    color: white;
 }
 
 /* Help Line Ended */
@@ -367,7 +373,7 @@ footer {
     transition:0.4s ease-in-out;
 }
 
-span{
+.dibya-footer-inside-main span{
     font-size: 15px;
     font-weight: var(--footer-main-font-weight);
     text-decoration: var(--footer-main-a-text-decoration);
@@ -409,9 +415,9 @@ span{
     color: rgb(102, 102, 102);
     text-align: center;
 }
-a:hover{
+footer a:hover{
     color: white;
 }
-i:hover{
+.dibya-logo-bookmyshow i:hover{
     color: white;
 }

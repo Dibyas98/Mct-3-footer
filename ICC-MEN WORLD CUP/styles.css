@@ -2,38 +2,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    font-family: "Roboto",sans-serif;
+:root {
+    font-family: "Roboto", sans-serif;
     /* font-size and weight */
-    --font-12px:0.75rem;
-    --font-14px:0.875rem;
-    --font-16px:1rem;
-    --font-18px:1.125rem;
-    --font-24px:1.5rem;
+    --font-12px: 0.75rem;
+    --font-14px: 0.875rem;
+    --font-16px: 1rem;
+    --font-18px: 1.125rem;
+    --font-24px: 1.5rem;
     /* color */
-    --white-color:rgb(255,255,255);
-    --lightgray-color:rgb(51, 53, 69);
-    --tomato-color:rgb(248, 68, 100);
-    --darkgray-color:rgb(31, 37, 51);
-    --off-white-color:rgb(235,235,235);
-    --background-color1:rgb(245,245,245);
-    --background-color2:rgb(242,245,249);
-    --slate-color:rgb(43, 49, 72);
-    --scroll-button-color:rgb(153, 153, 153);
+    --white-color: rgb(255, 255, 255);
+    --lightgray-color: rgb(51, 53, 69);
+    --tomato-color: rgb(248, 68, 100);
+    --darkgray-color: rgb(31, 37, 51);
+    --off-white-color: rgb(235, 235, 235);
+    --background-color1: rgb(245, 245, 245);
+    --background-color2: rgb(242, 245, 249);
+    --slate-color: rgb(43, 49, 72);
+    --scroll-button-color: rgb(153, 153, 153);
     /* text-color */
-    --placeholder-color:rgb(153,153,153);
-    --navbar-font-color:rgb(204, 204, 204);
-    --cards-heading-color:rgb(51, 51, 51);
-    --font-tomato-color:rgb(220, 53, 88);
-    --card-title-color:rgb(34, 34, 34);
-    --card-subtitle-color:rgb(102, 102, 102);
-    --home-text-color:rgb(170, 171, 172);
+    --placeholder-color: rgb(153, 153, 153);
+    --navbar-font-color: rgb(204, 204, 204);
+    --cards-heading-color: rgb(51, 51, 51);
+    --font-tomato-color: rgb(220, 53, 88);
+    --card-title-color: rgb(34, 34, 34);
+    --card-subtitle-color: rgb(102, 102, 102);
+    --home-text-color: rgb(170, 171, 172);
 }
 
 /* <------------------------------header section-------------------------------------------------------------------> */
@@ -52,140 +52,166 @@
     --font-14px:0.875rem;
     --font-16px:1rem;
 } */
-nav{
+nav {
     min-width: 1440px;
 }
-.nav_1{
+
+.nav_1 {
     background-color: var(--lightgray-color);
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding:2.2rem 10rem;
-    height:60px;
-    
-}
-.nav_1_sub{
-    display:flex;
-    gap:1rem;
-}
-.nav_1 img{
-    height:35px;
-    object-fit: cover;
-}
-.search_bar{
-    width:37rem;
-    background-color: var(--white-color);
-    padding:8px;
-    border-radius:4px;
-    border: 1px solid rgb(238, 238, 238);
-}
-.fa-magnifying-glass{
-    color:rgb(119,119,119);
-    margin-right:0.8rem;
-    margin-left:5px;
-}
-.search_bar input{
-    border:none;
+    padding: 2.2rem 10rem;
+    height: 60px;
+
 }
 
-.search_bar span{ 
-  color: var(--placeholder-color);
-  font-size:var(--font-16px);
-  font-weight:400;
-  width:800px;
+.nav_1_sub {
+    display: flex;
+    gap: 1rem;
 }
-.select{
-    border:none;
+
+.nav_1 img {
+    height: 35px;
+    object-fit: cover;
+}
+
+.search_bar {
+    width: 37rem;
+    background-color: var(--white-color);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.fa-magnifying-glass {
+    color: rgb(119, 119, 119);
+    margin-right: 0.8rem;
+    margin-left: 5px;
+}
+
+.search_bar input {
+    border: none;
+}
+
+.search_bar span {
+    color: var(--placeholder-color);
+    font-size: var(--font-16px);
+    font-weight: 400;
+    width: 800px;
+}
+
+.select {
+    border: none;
     background-color: var(--lightgray-color);
 }
-form{
-    display:flex;
-    gap:2rem;
+
+form {
+    display: flex;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
-form span{
-    display:flex;
+
+form span {
+    display: flex;
     width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
-    color:var(--navbar-font-color);
-    font-size:var(--font-16px);
-    font-weight:400;
+    color: var(--navbar-font-color);
+    font-size: var(--font-16px);
+    font-weight: 400;
 }
-.fa-caret-down{
-    color:var(--white-color);
-    transform:scale(0.8);
-    margin-left:10px;
+
+.fa-caret-down {
+    color: var(--white-color);
+    transform: scale(0.8);
+    margin-left: 10px;
 }
-form button{ 
+
+form button {
     background-color: var(--tomato-color);
-    border:none;
-    color:var(--white-color);
+    border: none;
+    color: var(--white-color);
     font-size: var(--font-12px);
     letter-spacing: 1px;
-    font-weight:400;
-    padding:8px 17px;
-    border-radius:5px;
+    font-weight: 400;
+    padding: 8px 17px;
+    border-radius: 5px;
 }
-.fa-bars{
-    color:var(--white-color);
-    transform:scale(1.5);
+
+.fa-bars {
+    color: var(--white-color);
+    transform: scale(1.5);
 }
 
 /* effect */
-.nav_1 img:hover,form span:hover,form button:hover,.fa-bars:hover{
-    cursor:pointer;
+.nav_1 img:hover,
+form span:hover,
+form button:hover,
+.fa-bars:hover {
+    cursor: pointer;
 }
 
-.nav_2{
-    background-color:var(--darkgray-color); 
+.nav_2 {
+    background-color: var(--darkgray-color);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    padding:0.7rem 10rem;
+    padding: 0.7rem 10rem;
 }
-.nav_2 ul{
+
+.nav_2 ul {
     list-style-type: none;
 }
-.nav_2 ul li a{
+
+.nav_2 ul li a {
     text-decoration: none;
 }
-.nav_2_sub1{
-    display:flex;
-    gap:1.3rem;
-    margin-left:4px;
+
+.nav_2_sub1 {
+    display: flex;
+    gap: 1.3rem;
+    margin-left: 4px;
 }
-.nav_2_sub1 li a{
-    color:var(--navbar-font-color);
-    font-size:var(--font-16px);
-    transition:.3s;
+
+.nav_2_sub1 li a {
+    color: var(--navbar-font-color);
+    font-size: var(--font-16px);
+    transition: .3s;
 }
-.nav_2_sub1 li a img{
-    width:16rem;
+
+.nav_2_sub1 li a img {
+    width: 16rem;
 }
-.nav_2_sub1 span{
-    color:rgb(231,54,77);
-    font-size:9px;
+
+.nav_2_sub1 span {
+    color: rgb(231, 54, 77);
+    font-size: 9px;
     position: relative;
-    bottom:10px;
-    left:-25px;
+    bottom: 10px;
+    left: -25px;
 }
-.nav_2_sub2{
-    display:flex;
-    gap:1.5rem;
+
+.nav_2_sub2 {
+    display: flex;
+    gap: 1.5rem;
 }
-.nav_2_sub2 li a{
-    color:var(--white-color);
+
+.nav_2_sub2 li a {
+    color: var(--white-color);
     font-size: var(--font-14px);
 }
 
 /* effect */
-.nav_2_sub1 li:hover,.nav_2_sub2 li:hover,.nav_2_sub1 span:hover{
+.nav_2_sub1 li:hover,
+.nav_2_sub2 li:hover,
+.nav_2_sub1 span:hover {
     cursor: pointer;
 }
-.nav_2_sub1 li a:hover{
-    color:var(--white-color);
+
+.nav_2_sub1 li a:hover {
+    color: var(--white-color);
 }
 
 
@@ -214,14 +240,15 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    
-}
-:root{
-    --icc-men-world-cup-container-background-color:rgb(50,0,115);
-    --rough-border:2px solid red;
+
 }
 
-.dibya-icc-container{
+:root {
+    --icc-men-world-cup-container-background-color: rgb(50, 0, 115);
+    --rough-border: 2px solid red;
+}
+
+.dibya-icc-container {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
@@ -232,10 +259,12 @@ body {
     min-width: 1440px;
 
 }
-.dibya-icc-container img{
+
+.dibya-icc-container img {
     cursor: pointer;
 }
-.dibya-icc-2023-inside-container{
+
+.dibya-icc-2023-inside-container {
     height: 114.32px;
     width: 80%;
     margin: 0 148px;
@@ -243,19 +272,21 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    
+
 }
-.dibya-icc-2023-inside-container img{
+
+.dibya-icc-2023-inside-container img {
     width: 940px;
     height: 78.325px;
     border-radius: 1rem;
 }
+
 /* ====================================================================================================================================================================================================== */
 
 
 
 
-.dibya-view-all-match{
+.dibya-view-all-match {
     height: 192.32px;
     width: 80%;
     padding-top: 5px;
@@ -265,11 +296,13 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
-.dibya-view-all-match img{
+
+.dibya-view-all-match img {
     height: 156.66px;
     width: 940px;
 }
-.dibya-flag-container{
+
+.dibya-flag-container {
     width: 80%;
     height: 781px;
     margin: 0 148px;
@@ -279,15 +312,20 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
-.dibya-flag-heading,.dibya-match-by-venue-heading{
+
+.dibya-flag-heading,
+.dibya-match-by-venue-heading {
     width: 940px;
 }
-.dibya-flag-heading h2,.dibya-match-by-venue-heading h2{
+
+.dibya-flag-heading h2,
+.dibya-match-by-venue-heading h2 {
     font-size: 16px;
     font-weight: 500;
     color: white;
 }
-.dibya-flag-image{
+
+.dibya-flag-image {
     width: 940px;
     height: 701px;
     display: grid;
@@ -295,7 +333,8 @@ body {
     grid-template-rows: repeat(3, 1fr);
 
 }
-.dibya-flag-image img{
+
+.dibya-flag-image img {
     width: 223px;
     height: 223px;
 }
@@ -306,7 +345,7 @@ body {
 
 
 
-.dibya-match-by-venue{
+.dibya-match-by-venue {
     width: 80%;
     height: 781px;
     padding-top: 20px;
@@ -317,29 +356,33 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
-.dibya-match-by-venue-image{
+
+.dibya-match-by-venue-image {
     width: 940px;
     height: 701px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-.dibya-match-by-venue-image img{
+
+.dibya-match-by-venue-image img {
     width: 223px;
     height: 223px;
 }
+
 /* =============================================================================================================================================== */
 
 
 
-.dibya-patner{
+.dibya-patner {
     height: 216.66px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
 }
-.dibya-patner-image{
+
+.dibya-patner-image {
     height: 216.66px;
     width: 80%;
     display: flex;
@@ -348,7 +391,8 @@ body {
     flex-wrap: nowrap;
 
 }
-.dibya-patner-image img{
+
+.dibya-patner-image img {
     width: 940px;
     height: 156.66px;
     cursor: pointer;
@@ -361,7 +405,7 @@ body {
 
 /* WHITE BACKGROUND STARTED */
 
-.dibya-present-bar{
+.dibya-present-bar {
     background-color: white;
     height: 44.4px;
     display: flex;
@@ -369,7 +413,8 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
-.dibya-present-bar-inside{
+
+.dibya-present-bar-inside {
     height: 44.4px;
     width: 80%;
     display: flex;
@@ -379,15 +424,17 @@ body {
     flex-wrap: nowrap;
 
 }
-.dibya-present-bar-inside a{
+
+.dibya-present-bar-inside a {
     text-decoration: none;
     color: RGB(170, 171, 172);
     font-size: 0.8rem;
-    
+
 
 }
-.dibya-present-bar-inside div i{
-    color:RGB(170, 171, 172);
+
+.dibya-present-bar-inside div i {
+    color: RGB(170, 171, 172);
 
 }
 
@@ -397,9 +444,9 @@ body {
 /* ================================================================================================================================================================================================ */
 
 
-.dibya-icc-world-cup-last{
+.dibya-icc-world-cup-last {
     height: 450px;
-    background-color: rgb(242,242,242);
+    background-color: rgb(242, 242, 242);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,19 +454,21 @@ body {
     gap: 1rem;
     min-width: 1440px;
 }
-.dibya-icc-world-cup-inside{
+
+.dibya-icc-world-cup-inside {
     width: 80%;
-    height: auto ;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     flex-wrap: nowrap;
 }
-.dibya-icc-world-cup-inside-heading{
+
+.dibya-icc-world-cup-inside-heading {
     height: 35px;
 }
 
-.dibya-icc-world-cup-inside-heading h1{
+.dibya-icc-world-cup-inside-heading h1 {
     height: 19.8px;
     font-size: 18px;
     font-weight: 500;
@@ -428,7 +477,8 @@ body {
     color: #7f7f7f;
     text-align: center;
 }
-.dibya-inside-icc-para-2{
+
+.dibya-inside-icc-para-2 {
     height: 30px;
     color: #7F7F7F;
     line-height: 16px;
@@ -441,11 +491,12 @@ body {
     cursor: default;
 }
 
-.dibya-inside-icc-para-2 a{
+.dibya-inside-icc-para-2 a {
     text-decoration: none;
     color: #DC3558;
 }
-.dibya-inside-icc-para-1{
+
+.dibya-inside-icc-para-1 {
     height: 23px;
     color: #7F7F7F;
     line-height: 16px;
@@ -498,9 +549,10 @@ body {
     --footer-main-font-weight: 400;
     --footer-main-a-font-size: 11px;
     --footer-main-a-letter-spacing: 0.1px;
-    --footer-main-a-text-decoration:none solid rgb(127, 127, 127);
-    --footer-main-a-color:#7f7f7f;
-    --footer-inside-main-container-padding:padding: 25px 0 0 0;;
+    --footer-main-a-text-decoration: none solid rgb(127, 127, 127);
+    --footer-main-a-color: #7f7f7f;
+    --footer-inside-main-container-padding: padding: 25px 0 0 0;
+    ;
 
 
 
@@ -596,7 +648,8 @@ footer {
 }
 
 .dibya-inside-helpline,
-.dibya-comform-ticket,.dibya-customer-care {
+.dibya-comform-ticket,
+.dibya-customer-care {
     width: 65%;
     height: 80px;
     display: flex;
@@ -662,12 +715,15 @@ footer {
     gap: 1rem;
     flex-wrap: nowrap;
 }
-.dibya-customer-care svg:hover{
+
+.dibya-customer-care svg:hover {
     fill: white;
     color: white;
 }
 
-.dibya-customer-care svg:hover,.dibya-newsletter svg:hover,.dibya-comform-ticket svg:hover{
+.dibya-customer-care svg:hover,
+.dibya-newsletter svg:hover,
+.dibya-comform-ticket svg:hover {
     fill: white;
     color: white;
 }
@@ -691,7 +747,7 @@ footer {
     align-items: center;
     background-color: var(--footer-main-background-color);
     min-width: 1440px;
-    
+
 }
 
 .dibya-footer-inside-main {
@@ -714,11 +770,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* Top cinemas ended */
 
 
 /* Upcomming cinemas */
-.dibya-upcoming-cinemas{
+.dibya-upcoming-cinemas {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -727,11 +784,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* Upcomming cinemas ended */
 
 
 /* Upcoming Movies family */
-.dibya-family-movies{
+.dibya-family-movies {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -744,7 +802,7 @@ footer {
 /* Upcoming Movies family endes */
 
 /* UPCOMING & NOWSHOWING MARATHI MOVIES */
-.dibya-upcoming-marati{
+.dibya-upcoming-marati {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -753,12 +811,13 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* UPCOMING & NOWSHOWING MARATHI MOVIES ENDED */
 
 
 
 /* UPCOMING MOVIES */
-.dibya-upcoming-movies{
+.dibya-upcoming-movies {
     height: 93px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -767,10 +826,11 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* UPCOMING MOVIES ENDED */
 
 /* MOVIES BY GENRE */
-.dibya-movies-by-genre{
+.dibya-movies-by-genre {
     height: 111px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -783,7 +843,7 @@ footer {
 /* MOVIES BY GENRE ENDED */
 
 /* MOVIES BY LANGUAGE */
-.dibya-movies-by-lang{
+.dibya-movies-by-lang {
     height: 111px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -792,11 +852,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* MOVIES BY LANGUAGE ENDED */
 
 
 
-.dibya-inside-main-box h2{
+.dibya-inside-main-box h2 {
     font-size: var(--footer-main-head-font-size);
     text-decoration: var(--footer-main-head-text-decoration);
     color: var(--footer-main-head-font-color);
@@ -806,8 +867,9 @@ footer {
     font-weight: var(--footer-main-font-weight);
 
 }
+
 /* TAMIL MOVIES BY GENRE */
-.dibya-tamil-movies-by-genre{
+.dibya-tamil-movies-by-genre {
     height: 129px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -816,10 +878,11 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* TAMIL MOVIES BY GENRE ENDED */
 
 /* MOVIE REVIEWS AND TRENDING ARTICLES */
-.dibya-movie-review{
+.dibya-movie-review {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -828,10 +891,11 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* MOVIE REVIEWS AND TRENDING ARTICLES ENDED */
 
 /* COUNTRIES */
-.dibya-contries{
+.dibya-contries {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -840,11 +904,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* COUNTRIES ENDED */
 
 
 /* HELP */
-.dibya-help{
+.dibya-help {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -853,11 +918,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* HELP ENDED */
 
 
 /* BOOKMYSHOW EXCLUSIVES */
-.dibya-book-exclusive{
+.dibya-book-exclusive {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -866,6 +932,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* BOOKMYSHOW EXCLUSIVES ENDED */
 
 
@@ -875,10 +942,10 @@ footer {
     text-decoration: var(--footer-main-a-text-decoration);
     color: var(--footer-main-a-color);
     letter-spacing: var(--footer-main-a-letter-spacing);
-    transition:0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
-.dibya-footer-inside-main span{
+.dibya-footer-inside-main span {
     font-size: 15px;
     font-weight: var(--footer-main-font-weight);
     text-decoration: var(--footer-main-a-text-decoration);
@@ -887,7 +954,7 @@ footer {
     cursor: default;
 }
 
-.dibya-logo-bookmyshow{
+/* .dibya-logo-bookmyshow {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -895,8 +962,9 @@ footer {
     background-color: var(--footer-main-background-color);
     padding: 0 24px 20px 24px;
     gap: 0.5rem;
-}
-.dibya-logo-add{
+} */
+
+.dibya-logo-add {
     height: 30px;
     display: flex;
     justify-content: space-between;
@@ -906,14 +974,16 @@ footer {
     /* border: var(--footer-border-for-test); */
 
 }
-.dibya-hr{
+
+.dibya-hr {
     height: 0.9px;
     background-color: #5D5D5F;
     width: 41rem;
     /* border: var(--footer-border-for-test); */
 
 }
-.dibya-footer-icons{
+
+.dibya-footer-icons {
     height: 39.4px;
     display: flex;
     justify-content: center;
@@ -921,55 +991,62 @@ footer {
     gap: 0.5rem;
     flex-wrap: nowrap;
 }
-.dibya-social-midia{
+
+.dibya-social-midia {
     overflow: hidden;
     color: #5D5D5F;
 }
-.dibya-footer-icons i{
+
+.dibya-footer-icons i {
     font-size: 2rem;
     color: var();
 }
-.dibya-last-foot{
+
+.dibya-last-foot {
     padding: 30px;
     font-size: 11px;
     color: rgb(102, 102, 102);
     text-align: center;
 }
-footer a:hover{
+
+footer a:hover {
     color: white;
 }
-.dibya-logo-bookmyshow i:hover{
+
+.dibya-logo-bookmyshow i:hover {
     color: white;
 }
 
 
-.dibya-footer-media{
-        /* position: relative;
+.dibya-footer-media {
+    /* position: relative;
         bottom: 200vh; */
-        width: 100%;
-        height: 40px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        min-width: 1440px;
-    
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 1440px;
+
 }
-.dibya-footer-media-inside-container{
+
+.dibya-footer-media-inside-container {
     width: 80%;
     height: 50px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    
+
 }
+
 /* .dibya-home{
     dis
 } */
 
-.dibya-all-div img{
-    
+.dibya-all-div img {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -978,7 +1055,8 @@ footer a:hover{
     width: 25px;
     object-position: center;
 }
-.dibya-all-div{
+
+.dibya-all-div {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -990,18 +1068,21 @@ footer a:hover{
     text-align: center;
     flex-wrap: nowrap;
 }
-.dibya-all-div div{
+
+.dibya-all-div div {
     width: 50px;
 }
-@media only screen and (max-width: 768px){
-    footer{
+
+@media only screen and (max-width: 768px) {
+    footer {
         visibility: hidden;
         height: 0px;
         display: none;
     }
 }
-@media only screen and (min-width: 768px){
-    .dibya-footer-media{
+
+@media only screen and (min-width: 768px) {
+    .dibya-footer-media {
         visibility: hidden;
         display: none;
         height: 0px;

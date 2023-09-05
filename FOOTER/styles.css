@@ -1,3 +1,6 @@
+/*================================================= FOOTER====================================== */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
@@ -22,9 +25,10 @@ body {
     --footer-main-font-weight: 400;
     --footer-main-a-font-size: 11px;
     --footer-main-a-letter-spacing: 0.1px;
-    --footer-main-a-text-decoration:none solid rgb(127, 127, 127);
-    --footer-main-a-color:#7f7f7f;
-    --footer-inside-main-container-padding:padding: 25px 0 0 0;;
+    --footer-main-a-text-decoration: none solid rgb(127, 127, 127);
+    --footer-main-a-color: #7f7f7f;
+    --footer-inside-main-container-padding: padding: 25px 0 0 0;
+    ;
 
 
 
@@ -46,7 +50,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    min-width: 1440px;
 
 }
 
@@ -116,11 +119,11 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    min-width: 1440px;
 }
 
 .dibya-inside-helpline,
-.dibya-comform-ticket,.dibya-customer-care {
+.dibya-comform-ticket,
+.dibya-customer-care {
     width: 65%;
     height: 80px;
     display: flex;
@@ -186,12 +189,15 @@ footer {
     gap: 1rem;
     flex-wrap: nowrap;
 }
-.dibya-customer-care svg:hover{
+
+.dibya-customer-care svg:hover {
     fill: white;
     color: white;
 }
 
-.dibya-customer-care svg:hover,.dibya-newsletter svg:hover,.dibya-comform-ticket svg:hover{
+.dibya-customer-care svg:hover,
+.dibya-newsletter svg:hover,
+.dibya-comform-ticket svg:hover {
     fill: white;
     color: white;
 }
@@ -205,16 +211,16 @@ footer {
 
 .dibya-fotter-main-container {
     width: 100%;
-    height: 1088px;
+    height: auto;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--footer-main-background-color);
-    min-width: 1440px;
-    
+
 }
 
 .dibya-footer-inside-main {
@@ -237,11 +243,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* Top cinemas ended */
 
 
 /* Upcomming cinemas */
-.dibya-upcoming-cinemas{
+.dibya-upcoming-cinemas {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -250,11 +257,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* Upcomming cinemas ended */
 
 
 /* Upcoming Movies family */
-.dibya-family-movies{
+.dibya-family-movies {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -267,7 +275,7 @@ footer {
 /* Upcoming Movies family endes */
 
 /* UPCOMING & NOWSHOWING MARATHI MOVIES */
-.dibya-upcoming-marati{
+.dibya-upcoming-marati {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -276,12 +284,13 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* UPCOMING & NOWSHOWING MARATHI MOVIES ENDED */
 
 
 
 /* UPCOMING MOVIES */
-.dibya-upcoming-movies{
+.dibya-upcoming-movies {
     height: 93px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -290,10 +299,11 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* UPCOMING MOVIES ENDED */
 
 /* MOVIES BY GENRE */
-.dibya-movies-by-genre{
+.dibya-movies-by-genre {
     height: 111px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -306,7 +316,7 @@ footer {
 /* MOVIES BY GENRE ENDED */
 
 /* MOVIES BY LANGUAGE */
-.dibya-movies-by-lang{
+.dibya-movies-by-lang {
     height: 111px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -315,11 +325,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* MOVIES BY LANGUAGE ENDED */
 
 
 
-.dibya-inside-main-box h2{
+.dibya-inside-main-box h2 {
     font-size: var(--footer-main-head-font-size);
     text-decoration: var(--footer-main-head-text-decoration);
     color: var(--footer-main-head-font-color);
@@ -329,8 +340,9 @@ footer {
     font-weight: var(--footer-main-font-weight);
 
 }
+
 /* TAMIL MOVIES BY GENRE */
-.dibya-tamil-movies-by-genre{
+.dibya-tamil-movies-by-genre {
     height: 129px;
     width: 100%;
     padding: var(--footer-inside-main-container-padding);
@@ -339,10 +351,11 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* TAMIL MOVIES BY GENRE ENDED */
 
 /* MOVIE REVIEWS AND TRENDING ARTICLES */
-.dibya-movie-review{
+.dibya-movie-review {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -351,10 +364,11 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* MOVIE REVIEWS AND TRENDING ARTICLES ENDED */
 
 /* COUNTRIES */
-.dibya-contries{
+.dibya-contries {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -363,11 +377,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* COUNTRIES ENDED */
 
 
 /* HELP */
-.dibya-help{
+.dibya-help {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -376,11 +391,12 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* HELP ENDED */
 
 
 /* BOOKMYSHOW EXCLUSIVES */
-.dibya-book-exclusive{
+.dibya-book-exclusive {
     width: 100%;
     height: 76px;
     padding: var(--footer-inside-main-container-padding);
@@ -389,6 +405,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
+
 /* BOOKMYSHOW EXCLUSIVES ENDED */
 
 
@@ -398,10 +415,10 @@ footer {
     text-decoration: var(--footer-main-a-text-decoration);
     color: var(--footer-main-a-color);
     letter-spacing: var(--footer-main-a-letter-spacing);
-    transition:0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
-.dibya-footer-inside-main span{
+.dibya-footer-inside-main span {
     font-size: 15px;
     font-weight: var(--footer-main-font-weight);
     text-decoration: var(--footer-main-a-text-decoration);
@@ -410,26 +427,36 @@ footer {
     cursor: default;
 }
 
-.dibya-logo-bookmyshow{
-    height: 282px;
+/* .dibya-logo-bookmyshow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100px;
     background-color: var(--footer-main-background-color);
     padding: 0 24px 20px 24px;
     gap: 0.5rem;
-    min-width: 1440px;
-}
-.dibya-logo-add{
-    height: 125px;
+} */
+
+.dibya-logo-add {
+    height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    gap: 1.2rem;
+    /* border: var(--footer-border-for-test); */
+
 }
-.dibya-hr{
+
+.dibya-hr {
     height: 0.9px;
     background-color: #5D5D5F;
-    width: 660px;
+    width: 40vw;
+    /* border: var(--footer-border-for-test); */
+
 }
-.dibya-footer-icons{
+
+.dibya-footer-icons {
     height: 39.4px;
     display: flex;
     justify-content: center;
@@ -437,31 +464,36 @@ footer {
     gap: 0.5rem;
     flex-wrap: nowrap;
 }
-.dibya-social-midia{
+
+.dibya-social-midia {
     overflow: hidden;
     color: #5D5D5F;
 }
-.dibya-footer-icons i{
+
+.dibya-footer-icons i {
     font-size: 2rem;
     color: var();
 }
-.dibya-last-foot{
+
+.dibya-last-foot {
     padding: 30px;
     font-size: 11px;
     color: rgb(102, 102, 102);
     text-align: center;
 }
-footer a:hover{
+
+footer a:hover {
     color: white;
 }
-.dibya-logo-bookmyshow i:hover{
+
+.dibya-logo-bookmyshow i:hover {
     color: white;
 }
 
 
-.dibya-footer-media{
+.dibya-footer-media {
     /* position: relative;
-    bottom: 200vh; */
+        bottom: 200vh; */
     width: 100%;
     height: 40px;
     display: flex;
@@ -469,23 +501,25 @@ footer a:hover{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    min-width: 1024px;
+
+
 }
-.dibya-footer-media-inside-container{
+
+.dibya-footer-media-inside-container {
     width: 80%;
     height: 50px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    border: var(--footer-border-for-test);
-    
+
 }
+
 /* .dibya-home{
     dis
 } */
 
-.dibya-all-div img{
-    
+.dibya-all-div img {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -494,7 +528,8 @@ footer a:hover{
     width: 25px;
     object-position: center;
 }
-.dibya-all-div{
+
+.dibya-all-div {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -506,20 +541,301 @@ footer a:hover{
     text-align: center;
     flex-wrap: nowrap;
 }
-.dibya-all-div div{
+.dibya-all-div div {
     width: 50px;
 }
-@media only screen and (max-width: 768px){
-    footer{
-        visibility: hidden;
-        height: 0px;
+@media only screen and (min-width: 1200px) {
+    .dibya-footer-media{
         display: none;
     }
 }
-@media only screen and (min-width: 768px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .dibya-icc-container {
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .dibya-icc-2023-container {
+        width: 100%;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(3,150px);
+        grid-template-rows: repeat(4, 150px);
+        width: 80%;
+        /* border: 10px solid black; */
+        column-gap: 1rem;
+    }
+    .dibya-icc-2023-inside-container img {
+        width: 90%;
+        height: 90%;
+        margin-left:1rem
+    }
+    .dibya-view-all-match,.dibya-icc-2023-inside-container{
+        margin: 0 80px;
+    }
+    .dibya-view-all-match img{
+        width: 100%;
+        height: 90%;
+        padding-left: 2rem;
+    }
+    .dibya-match-by-venue,.dibya-flag-container{
+        height: auto;
+    }
+    .dibya-flag-heading,.dibya-match-by-venue-heading{
+        margin-left: 4rem;
+        width: 100%;
+        padding-left: 8rem;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(3,180px);
+        grid-template-rows: repeat(4, 180px);
+        width: 80%;
+        /* border: 10px solid black; */
+        /* column-gap: 3rem; */
+        padding-left: 3rem;
+    }
+    .dibya-flag-container,.dibya-match-by-venue{
+        width: 100%;
+        height: 250vh;
+    }
+    .dibya-flag-image img,.dibya-match-by-venue-image img{
+        width: 100%;
+        height: 100%;
+
+        
+    }
+    .dibya-flag-container,.dibya-match-by-venue-image{
+        margin: 0;
+    }
+    .dibya-flag-heading{
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .dibya-match-by-venue{
+        padding: 0;
+        margin: 0;
+    }
+    .dibya-patner{
+        margin-top: 5rem;
+    }
+    .dibya-patner-image img{
+        width: 90%;
+        height: 60%;
+    }
+
+
+    .dibya-icc-world-cup-last{
+        /* border: 10px solid red; */
+        width: 100%;
+        height: 350vh;
+    }
+
+
+
+    .dibya-icc-world-cup-inside{
+        gap: 1.5rem;
+    }
+    
     .dibya-footer-media{
+        display: none;
+    }
+    .dibya-hr{
+        width: 40vw;
+    }
+    
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .dibya-icc-container {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .dibya-icc-2023-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .dibya-icc-2023-inside-container img {
+        width: 100%;
+        height: 60%;
+        
+    }
+    .dibya-view-all-match,.dibya-icc-2023-inside-container{
+        margin-left: 5rem ;
+
+    }
+    .dibya-view-all-match img{
+        width: 100%;
+        height: 60%;
+    }
+    .dibya-match-by-venue,.dibya-flag-container{
+        height: auto;
+    }
+    .dibya-flag-heading,.dibya-match-by-venue-heading{
+        padding-left: 6rem;
+        width: 100%;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(10, 200px);
+        width: 80%;
+        /* border: 10px solid black; */
+        column-gap: 1rem;
+        padding-left: 0.5rem;
+    }
+    .dibya-flag-containe,.dibya-match-by-venue{
+        width: 100%;
+        height: 550vh;
+    }
+    .dibya-flag-image img,.dibya-match-by-venue-image img{
+        width: 100%;
+        height: 100%;
+
+        
+    }
+    .dibya-flag-container,.dibya-match-by-venue-image{
+        margin: 0;
+    }
+    .dibya-flag-heading{
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .dibya-match-by-venue{
+        padding: 0;
+        margin: 0;
+    }
+    .dibya-patner{
+        margin-top: 5rem;
+    }
+    .dibya-patner-image img{
+        width: 90%;
+        height: 60%;
+    }
+
+    .dibya-icc-world-cup-last{
+        /* border: 10px solid red; */
+        width: 100%;
+        height: 400vh;
+    }
+
+
+
+    .dibya-icc-world-cup-inside{
+        gap: 1.5rem;
+    }
+
+
+    .foot{
         visibility: hidden;
         display: none;
-        height: 0px;
     }
+    
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .dibya-icc-container {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        /* border: 10px solid red; */
+        height: auto;
+    }
+
+    .dibya-icc-2023-container {
+        width: 100%;
+
+    }
+
+    .dibya-icc-container {
+        gap: 0.1rem;
+    }
+    .dibya-icc-2023-inside-container img {
+        width: 270px;
+        height: 50px;
+        margin-right: 6rem;
+    }
+    .dibya-view-all-match,.dibya-icc-2023-inside-container{
+        margin: 0 25%;
+    }
+
+    .dibya-view-all-match img {
+        height: 51.66px;
+        width: 290px;
+        margin-right: 6rem;
+    }
+    .dibya-flag-heading,.dibya-match-by-venue-heading{
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(2,120px);
+        grid-template-rows: repeat(10, 120px);
+        width: 80%;
+        /* border: 10px solid black; */
+        column-gap: 1rem;
+    }
+    .dibya-flag-container{
+        width: 100%;
+    }
+    .dibya-flag-image img,.dibya-match-by-venue-image img{
+        width: 100%;
+        height: 100%;
+
+        
+    }
+    .dibya-flag-container,.dibya-match-by-venue-image{
+        margin: 0;
+    }
+    .dibya-match-by-venue{
+        padding: 0;
+        margin: 0;
+    }
+
+    .dibya-patner-image img{
+        width: 85%;
+        height: 60%;
+    }
+
+
+
+    .dibya-icc-world-cup-last{
+        /* border: 10px solid red; */
+        width: 100%;
+        height: 550vh;
+    }
+
+
+
+    .dibya-icc-world-cup-inside{
+        gap: 1.5rem;
+    }
+    
+
+    .foot{
+        visibility: hidden;
+        display: none;
+    }
+
 }

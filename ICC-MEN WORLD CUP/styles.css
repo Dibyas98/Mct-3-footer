@@ -8,6 +8,237 @@
     box-sizing: border-box;
 }
 
+
+:root{
+    font-family: "Roboto",sans-serif;
+    /* font-size and weight */
+    --font-12px:0.75rem;
+    --font-14px:0.875rem;
+    --font-16px:1rem;
+    --font-18px:1.125rem;
+    --font-24px:1.5rem;
+    /* color */
+    --white-color:rgb(255,255,255);
+    --lightgray-color:rgb(51, 53, 69);
+    --tomato-color:rgb(248, 68, 100);
+    --darkgray-color:rgb(31, 37, 51);
+    --off-white-color:rgb(235,235,235);
+    --background-color1:rgb(245,245,245);
+    --background-color2:rgb(242,245,249);
+    --slate-color:rgb(43, 49, 72);
+    --scroll-button-color:rgb(153, 153, 153);
+    /* text-color */
+    --placeholder-color:rgb(153,153,153);
+    --navbar-font-color:rgb(204, 204, 204);
+    --cards-heading-color:rgb(51, 51, 51);
+    --font-tomato-color:rgb(220, 53, 88);
+    --card-title-color:rgb(34, 34, 34);
+    --card-subtitle-color:rgb(102, 102, 102);
+    --home-text-color:rgb(170, 171, 172);
+}
+
+body{
+    background-color: var(--background-color1);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width:100vw;
+    height:100%;
+}
+.maincontainer{
+    width:100%;
+    /* border:10px solid red; */
+}
+header{
+    height:100%;
+    width:100%;
+    position: static;
+
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+/* <------------------------------header section-------------------------------------------------------------------> */
+/* you have to add this variable in your css file navbar root */
+/* :root{
+    
+    --lightgray-color:rgb(51, 53, 69);
+    --white-color:rgb(255,255,255);
+    --placeholder-color:rgb(153,153,153);
+    --navbar-font-color:rgb(204, 204, 204);
+    --tomato-color:rgb(248, 68, 100);
+    --darkgray-color:rgb(31, 37, 51);
+  
+
+    --font-12px:0.75rem;
+    --font-14px:0.875rem;
+    --font-16px:1rem;
+} */
+.nav_1{
+    background-color: var(--lightgray-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:64px;
+}
+.nav_width{
+    width:80vw;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav_1_sub{
+    display:flex;
+    gap:1rem;
+    width:100%;
+}
+.nav_1_sub img{
+    height:35px;
+    object-fit: cover;
+}
+.search_bar{
+    width:50%;
+    background-color: var(--white-color);
+    padding:5px;
+    border-radius:4px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    outline:none;
+}
+::placeholder{
+    font-size:var(--font-14px);
+    color:var(--placeholder-color);
+    border:none;
+    display:flex;
+}
+.fa-magnifying-glass{
+    color:var(--placeholder-color);
+    margin-right:0.8rem;
+    margin-left:5px;
+}
+
+.search_bar input{
+    width:100%;
+    border:none;
+}
+.select{
+    border:none;
+    background-color: var(--lightgray-color);
+}
+form{
+    display:flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    padding:10px;
+    outline:0;
+    box-shadow: none;
+    border:0 !important;
+    background: rgb(51,53,69);
+    background-image: none;
+    color:#fff;
+}
+
+select option:checked {
+    background-color: #555; /* Background color of the selected option */
+  }
+
+.fa-caret-down{
+    color:var(--white-color);
+    transform:scale(0.8);
+    margin-left:10px;
+}
+form button{ 
+    background-color: var(--tomato-color);
+    border:none;
+    color:var(--white-color);
+    font-size: var(--font-12px);
+    letter-spacing: 1px;
+    font-weight:400;
+    width:65px;
+    height:25px;
+    border-radius:5px;
+}
+.fa-bars{
+    color:var(--white-color);
+    transform:scale(1.5);
+}
+
+/* effect */
+.nav_1 img:hover,form span:hover,form button:hover,.fa-bars:hover{
+    cursor:pointer;
+}
+
+.nav_2{
+    background-color:var(--darkgray-color); 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:44px;
+}
+.nav_2 ul{
+    list-style-type: none;
+}
+.nav_2 ul li a{
+    text-decoration: none;
+}
+.nav_2_sub1{
+    display:flex;
+    gap:1.3rem;
+    margin-left:4px;
+}
+.nav_2_sub1 li a{
+    color:var(--navbar-font-color);
+    font-size:var(--font-14px);
+    transition:.3s;
+}
+.nav_2_sub1 li a img{
+    width:16rem;
+}
+sup{
+    color:rgb(231,54,77);
+    font-size:9px;
+    position: relative;
+    bottom:10px;
+}
+.nav_2_sub2{
+    display:flex;
+    gap:1.5rem;
+}
+.nav_2_sub2 li a{
+    color:var(--white-color);
+    font-size: var(--font-12px);
+}
+
+/* effect */
+.nav_2_sub1 li:hover,.nav_2_sub2 li:hover,.nav_2_sub1 span:hover{
+    cursor: pointer;
+}
+.nav_2_sub1 li a:hover{
+    color:var(--white-color);
+}
+/* responsiveness for navbar */
+.nav_1_resp,.nav2_resp{
+    display:none;
+}
+.nav1_l h2{
+    font-size: var(--font-24px);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.nav1_l span{
+    padding-top: 2px;
+    padding-left: 1px;
+    font-size: var(--font-12px);
+    color: var(--navbar-font-color);
+}
+
+
 :root {
     font-family: "Roboto", sans-serif;
     /* font-size and weight */
@@ -212,9 +443,8 @@ form button:hover,
 
 .nav_2_sub1 li a:hover {
     color: var(--white-color);
-} */ */ */ */
-
-
+} */
+*/ */ */
 /* ================================================================================================= */
 
 
@@ -240,6 +470,10 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
@@ -256,31 +490,13 @@ body {
     background-color: var(--icc-men-world-cup-container-background-color);
     width: 100%;
     height: auto;
-    min-width: 1440px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
 }
-@media only screen and (max-width: 460px){
-    .dibya-icc-container{
-        gap: 2rem;
-        min-width: none;
-        height: 2200px;
-        
-    }
-    
-}  
 
-@media only screen and (max-width: 262px){
-    .dibya-icc-container{
-        height: 3000px;
-        min-width: none;
-        width: 100px;
-        justify-content: space-between;
-        gap: 0.1rm;
-    }
-}
+
 
 .dibya-icc-container img {
     cursor: pointer;
@@ -293,7 +509,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
 
@@ -302,14 +518,8 @@ body {
     height: 78.325px;
     border-radius: 1rem;
 }
-@media only screen and (max-width: 262px){
-    .dibya-icc-2023-inside-container{
-        padding-right: 20rem;
-    }
-    .dibya-icc-2023-inside-container img{
-        width: 640px;
-    }
-}
+
+
 
 /* ====================================================================================================================================================================================================== */
 
@@ -324,21 +534,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .dibya-view-all-match img {
     height: 156.66px;
     width: 940px;
 }
-@media only screen and (max-width: 262px){
-    .dibya-view-all-match{
-        padding-right: 20rem;
-    }
-    .dibya-view-all-match img {
-        width: 640px;
-    }
-}
+
 
 .dibya-flag-container {
     width: 80%;
@@ -372,20 +575,7 @@ body {
 
 }
 
-@media only screen and (max-width: 460px){
-    .dibya-flag-image{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    
-}
-@media only screen and (max-width: 262px){
-    .dibya-flag-image{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        height: 1440px;
-    }
-}
+
 
 .dibya-flag-image img {
     width: 223px;
@@ -417,20 +607,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-@media only screen and (max-width: 460px){
-    .dibya-match-by-venue-image{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    
-}
-@media only screen and (max-width: 262px){
-    .dibya-match-by-venue-image{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        height: 1440px;
-    }
-}
+
 
 
 .dibya-match-by-venue-image img {
@@ -466,14 +643,7 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 262px){
-    .dibya-patner-image{
-        padding-right: 20rem;
-    }
-    .dibya-patner-image img {
-        width: 640px;
-    }
-}
+
 
 
 /* BLUE BACKGROUND ENDED */
@@ -498,7 +668,7 @@ body {
     align-items: center;
     padding-left: 15px;
     gap: 0.5rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
 
@@ -522,14 +692,13 @@ body {
 
 
 .dibya-icc-world-cup-last {
-    height: 450px;
+    height: 550px;
     background-color: rgb(242, 242, 242);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 1rem;
-    min-width: 1440px;
 }
 
 .dibya-icc-world-cup-inside {
@@ -538,12 +707,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .dibya-icc-world-cup-inside-heading {
     height: 35px;
 }
+
+
 
 .dibya-icc-world-cup-inside-heading h1 {
     height: 19.8px;
@@ -556,7 +727,7 @@ body {
 }
 
 .dibya-inside-icc-para-2 {
-    height: 30px;
+    
     color: #7F7F7F;
     line-height: 16px;
     vertical-align: baseline;
@@ -574,7 +745,7 @@ body {
 }
 
 .dibya-inside-icc-para-1 {
-    height: 23px;
+    
     color: #7F7F7F;
     line-height: 16px;
     vertical-align: baseline;
@@ -585,6 +756,8 @@ body {
     font-weight: 400;
     cursor: default;
 }
+
+
 
 /* ================================================================================================== */
 
@@ -607,7 +780,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    min-width: 1024px;
 }
 
 :root {
@@ -651,7 +823,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    min-width: 1440px;
 
 }
 
@@ -721,7 +892,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    min-width: 1440px;
 }
 
 .dibya-inside-helpline,
@@ -823,7 +993,6 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: var(--footer-main-background-color);
-    min-width: 1440px;
 
 }
 
@@ -1055,7 +1224,7 @@ footer {
 .dibya-hr {
     height: 0.9px;
     background-color: #5D5D5F;
-    width: 41rem;
+    width: 40vw;
     /* border: var(--footer-border-for-test); */
 
 }
@@ -1105,7 +1274,7 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    min-width: 1440px;
+
 
 }
 
@@ -1145,46 +1314,305 @@ footer a:hover {
     text-align: center;
     flex-wrap: nowrap;
 }
-
 .dibya-all-div div {
     width: 50px;
 }
-
-@media only screen and (max-width: 769px) {
-    footer {
-        visibility: hidden;
-
-        height: 0px;
+@media only screen and (min-width: 1200px) {
+    .dibya-footer-media{
         display: none;
-        min-width: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .dibya-icc-container {
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .dibya-icc-2023-container {
+        width: 100%;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(3,150px);
+        grid-template-rows: repeat(4, 150px);
+        width: 80%;
+        /* border: 10px solid black; */
+        column-gap: 1rem;
+    }
+    .dibya-icc-2023-inside-container img {
+        width: 90%;
+        height: 90%;
+        margin-left:1rem
+    }
+    .dibya-view-all-match,.dibya-icc-2023-inside-container{
+        margin: 0 80px;
+    }
+    .dibya-view-all-match img{
+        width: 100%;
+        height: 90%;
+        padding-left: 2rem;
+    }
+    .dibya-match-by-venue,.dibya-flag-container{
+        height: auto;
+    }
+    .dibya-flag-heading,.dibya-match-by-venue-heading{
+        margin-left: 4rem;
+        width: 100%;
+        padding-left: 8rem;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(3,180px);
+        grid-template-rows: repeat(4, 180px);
+        width: 80%;
+        /* border: 10px solid black; */
+        /* column-gap: 3rem; */
+        padding-left: 3rem;
+    }
+    .dibya-flag-container,.dibya-match-by-venue{
+        width: 100%;
+        height: 250vh;
+    }
+    .dibya-flag-image img,.dibya-match-by-venue-image img{
+        width: 100%;
+        height: 100%;
+
+        
+    }
+    .dibya-flag-container,.dibya-match-by-venue-image{
+        margin: 0;
+    }
+    .dibya-flag-heading{
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .dibya-match-by-venue{
+        padding: 0;
+        margin: 0;
+    }
+    .dibya-patner{
+        margin-top: 5rem;
+    }
+    .dibya-patner-image img{
+        width: 90%;
+        height: 60%;
+    }
+
+
+    .dibya-icc-world-cup-last{
+        /* border: 10px solid red; */
+        width: 100%;
+        height: 350vh;
+    }
+
+
+
+    .dibya-icc-world-cup-inside{
+        gap: 1.5rem;
+    }
+    
+    .dibya-footer-media{
+        display: none;
+    }
+    .dibya-hr{
+        width: 40vw;
     }
     
 }
 
-@media only screen and (min-width: 768px) {
-    .dibya-footer-media {
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .dibya-icc-container {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .dibya-icc-2023-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .dibya-icc-2023-inside-container img {
+        width: 100%;
+        height: 60%;
+        
+    }
+    .dibya-view-all-match,.dibya-icc-2023-inside-container{
+        margin-left: 5rem ;
+
+    }
+    .dibya-view-all-match img{
+        width: 100%;
+        height: 60%;
+    }
+    .dibya-match-by-venue,.dibya-flag-container{
+        height: auto;
+    }
+    .dibya-flag-heading,.dibya-match-by-venue-heading{
+        padding-left: 6rem;
+        width: 100%;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(10, 200px);
+        width: 80%;
+        /* border: 10px solid black; */
+        column-gap: 1rem;
+        padding-left: 0.5rem;
+    }
+    .dibya-flag-containe,.dibya-match-by-venue{
+        width: 100%;
+        height: 550vh;
+    }
+    .dibya-flag-image img,.dibya-match-by-venue-image img{
+        width: 100%;
+        height: 100%;
+
+        
+    }
+    .dibya-flag-container,.dibya-match-by-venue-image{
+        margin: 0;
+    }
+    .dibya-flag-heading{
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .dibya-match-by-venue{
+        padding: 0;
+        margin: 0;
+    }
+    .dibya-patner{
+        margin-top: 5rem;
+    }
+    .dibya-patner-image img{
+        width: 90%;
+        height: 60%;
+    }
+
+    .dibya-icc-world-cup-last{
+        /* border: 10px solid red; */
+        width: 100%;
+        height: 400vh;
+    }
+
+
+
+    .dibya-icc-world-cup-inside{
+        gap: 1.5rem;
+    }
+
+
+    .foot{
         visibility: hidden;
         display: none;
-        height: 0px;
-        max-width: none;
-        width: 100%;
     }
+    
+    
 }
 
-@media only screen and (min-width: 460px){
-    .dibya-footer-media {
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .dibya-icc-container {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        /* border: 10px solid red; */
+        height: auto;
+    }
+
+    .dibya-icc-2023-container {
+        width: 100%;
+
+    }
+
+    .dibya-icc-container {
+        gap: 0.1rem;
+    }
+    .dibya-icc-2023-inside-container img {
+        width: 270px;
+        height: 50px;
+        margin-right: 6rem;
+    }
+    .dibya-view-all-match,.dibya-icc-2023-inside-container{
+        margin: 0 25%;
+    }
+
+    .dibya-view-all-match img {
+        height: 51.66px;
+        width: 290px;
+        margin-right: 6rem;
+    }
+    .dibya-flag-heading,.dibya-match-by-venue-heading{
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .dibya-flag-image,.dibya-match-by-venue-image{
+        grid-template-columns: repeat(2,120px);
+        grid-template-rows: repeat(10, 120px);
+        width: 80%;
+        /* border: 10px solid black; */
+        column-gap: 1rem;
+    }
+    .dibya-flag-container{
+        width: 100%;
+    }
+    .dibya-flag-image img,.dibya-match-by-venue-image img{
+        width: 100%;
+        height: 100%;
+
         
-        max-width: none;
-        width: 100%;
     }
+    .dibya-flag-container,.dibya-match-by-venue-image{
+        margin: 0;
+    }
+    .dibya-match-by-venue{
+        padding: 0;
+        margin: 0;
+    }
+
+    .dibya-patner-image img{
+        width: 85%;
+        height: 60%;
+    }
+
+
+
+    .dibya-icc-world-cup-last{
+        /* border: 10px solid red; */
+        width: 100%;
+        height: 550vh;
+    }
+
+
+
+    .dibya-icc-world-cup-inside{
+        gap: 1.5rem;
+    }
+    
+
+    .foot{
+        visibility: hidden;
+        display: none;
+    }
+
 }
 
-@media only screen and (min-width: 260px){
-    .dibya-footer-media {
-        max-width: none;
-        width: 20%;
-    }
-    .dibya-all-div{
-        width: 50px;
-    }
-}
+
+
+

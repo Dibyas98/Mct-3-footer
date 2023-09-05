@@ -1076,8 +1076,13 @@ footer a:hover {
 @media only screen and (max-width: 768px) {
     footer {
         visibility: hidden;
+
         height: 0px;
         display: none;
+        min-width: 600px;
+    }
+    body{
+        width: 700px;
     }
 }
 

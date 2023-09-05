@@ -334,6 +334,12 @@ body {
 
 }
 
+@media only screen and (min-width: 460px){
+    .dibya-flag-image{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .dibya-flag-image img {
     width: 223px;
     height: 223px;
@@ -1073,13 +1079,13 @@ footer a:hover {
     width: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     footer {
         visibility: hidden;
 
         height: 0px;
         display: none;
-        min-width: 600px;
+        min-width: none;
     }
     
 }
@@ -1089,5 +1095,11 @@ footer a:hover {
         visibility: hidden;
         display: none;
         height: 0px;
+        max-width: none;
+        width: 100%;
     }
+}
+
+@media only screen and (min-width: 460px){
+
 }

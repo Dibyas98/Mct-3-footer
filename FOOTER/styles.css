@@ -494,6 +494,7 @@ footer a:hover {
 .dibya-footer-media {
     /* position: relative;
         bottom: 200vh; */
+
     width: 100%;
     height: 40px;
     display: flex;
@@ -501,6 +502,13 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: var(--white-color);
+    position:fixed;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    bottom:0;
+    padding:2rem;
+    z-index: 200;
 
 
 }
@@ -548,6 +556,7 @@ footer a:hover {
     .dibya-footer-media{
         display: none;
     }
+    
 }
 
 
@@ -563,182 +572,19 @@ footer a:hover {
 
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .dibya-icc-container {
-        width: 100%;
-        gap: 3rem;
-    }
-
-    .dibya-icc-2023-container {
-        width: 100%;
-    }
-    .dibya-flag-image,.dibya-match-by-venue-image{
-        grid-template-columns: repeat(3,150px);
-        grid-template-rows: repeat(4, 150px);
-        width: 80%;
-        /* border: 10px solid black; */
-        column-gap: 1rem;
-    }
-    .dibya-icc-2023-inside-container img {
-        width: 90%;
-        height: 90%;
-        margin-left:1rem
-    }
-    .dibya-view-all-match,.dibya-icc-2023-inside-container{
-        margin: 0 80px;
-    }
-    .dibya-view-all-match img{
-        width: 100%;
-        height: 90%;
-        padding-left: 2rem;
-    }
-    .dibya-match-by-venue,.dibya-flag-container{
-        height: auto;
-    }
-    .dibya-flag-heading,.dibya-match-by-venue-heading{
-        margin-left: 4rem;
-        width: 100%;
-        padding-left: 8rem;
-    }
-    .dibya-flag-image,.dibya-match-by-venue-image{
-        grid-template-columns: repeat(3,180px);
-        grid-template-rows: repeat(4, 180px);
-        width: 80%;
-        /* border: 10px solid black; */
-        /* column-gap: 3rem; */
-        padding-left: 3rem;
-    }
-    .dibya-flag-container,.dibya-match-by-venue{
-        width: 100%;
-        height: 250vh;
-    }
-    .dibya-flag-image img,.dibya-match-by-venue-image img{
-        width: 100%;
-        height: 100%;
-
-        
-    }
-    .dibya-flag-container,.dibya-match-by-venue-image{
-        margin: 0;
-    }
-    .dibya-flag-heading{
-        margin-left: 2rem;
-        width: 100%;
-    }
-    .dibya-match-by-venue{
-        padding: 0;
-        margin: 0;
-    }
-    .dibya-patner{
-        margin-top: 5rem;
-    }
-    .dibya-patner-image img{
-        width: 90%;
-        height: 60%;
-    }
-
-
-    .dibya-icc-world-cup-last{
-        /* border: 10px solid red; */
-        width: 100%;
-        height: 350vh;
-    }
-
-
-
-    .dibya-icc-world-cup-inside{
-        gap: 1.5rem;
-    }
     
-    .dibya-footer-media{
-        display: none;
-    }
     .dibya-hr{
         width: 40vw;
+    }
+    .foot{
+        display: none;
     }
     
 }
 
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .dibya-icc-container {
-        width: 100%;
-        height: 100%;
-        
-    }
-
-    .dibya-icc-2023-container {
-        width: 100%;
-        height: 100%;
-    }
     
-    .dibya-icc-2023-inside-container img {
-        width: 100%;
-        height: 60%;
-        
-    }
-    .dibya-view-all-match,.dibya-icc-2023-inside-container{
-        margin-left: 5rem ;
-
-    }
-    .dibya-view-all-match img{
-        width: 100%;
-        height: 60%;
-    }
-    .dibya-match-by-venue,.dibya-flag-container{
-        height: auto;
-    }
-    .dibya-flag-heading,.dibya-match-by-venue-heading{
-        padding-left: 6rem;
-        width: 100%;
-    }
-    .dibya-flag-image,.dibya-match-by-venue-image{
-        grid-template-columns: repeat(2,200px);
-        grid-template-rows: repeat(10, 200px);
-        width: 80%;
-        /* border: 10px solid black; */
-        column-gap: 1rem;
-        padding-left: 0.5rem;
-    }
-    .dibya-flag-containe,.dibya-match-by-venue{
-        width: 100%;
-        height: 550vh;
-    }
-    .dibya-flag-image img,.dibya-match-by-venue-image img{
-        width: 100%;
-        height: 100%;
-
-        
-    }
-    .dibya-flag-container,.dibya-match-by-venue-image{
-        margin: 0;
-    }
-    .dibya-flag-heading{
-        margin-left: 2rem;
-        width: 100%;
-    }
-    .dibya-match-by-venue{
-        padding: 0;
-        margin: 0;
-    }
-    .dibya-patner{
-        margin-top: 5rem;
-    }
-    .dibya-patner-image img{
-        width: 90%;
-        height: 60%;
-    }
-
-    .dibya-icc-world-cup-last{
-        /* border: 10px solid red; */
-        width: 100%;
-        height: 400vh;
-    }
-
-
-
-    .dibya-icc-world-cup-inside{
-        gap: 1.5rem;
-    }
 
 
     .foot{
@@ -754,83 +600,7 @@ footer a:hover {
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .dibya-icc-container {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        /* border: 10px solid red; */
-        height: auto;
-    }
-
-    .dibya-icc-2023-container {
-        width: 100%;
-
-    }
-
-    .dibya-icc-container {
-        gap: 0.1rem;
-    }
-    .dibya-icc-2023-inside-container img {
-        width: 270px;
-        height: 50px;
-        margin-right: 6rem;
-    }
-    .dibya-view-all-match,.dibya-icc-2023-inside-container{
-        margin: 0 25%;
-    }
-
-    .dibya-view-all-match img {
-        height: 51.66px;
-        width: 290px;
-        margin-right: 6rem;
-    }
-    .dibya-flag-heading,.dibya-match-by-venue-heading{
-        margin-left: 2rem;
-        width: 100%;
-    }
-    .dibya-flag-image,.dibya-match-by-venue-image{
-        grid-template-columns: repeat(2,120px);
-        grid-template-rows: repeat(10, 120px);
-        width: 80%;
-        /* border: 10px solid black; */
-        column-gap: 1rem;
-    }
-    .dibya-flag-container{
-        width: 100%;
-    }
-    .dibya-flag-image img,.dibya-match-by-venue-image img{
-        width: 100%;
-        height: 100%;
-
-        
-    }
-    .dibya-flag-container,.dibya-match-by-venue-image{
-        margin: 0;
-    }
-    .dibya-match-by-venue{
-        padding: 0;
-        margin: 0;
-    }
-
-    .dibya-patner-image img{
-        width: 85%;
-        height: 60%;
-    }
-
-
-
-    .dibya-icc-world-cup-last{
-        /* border: 10px solid red; */
-        width: 100%;
-        height: 550vh;
-    }
-
-
-
-    .dibya-icc-world-cup-inside{
-        gap: 1.5rem;
-    }
+    
     
 
     .foot{

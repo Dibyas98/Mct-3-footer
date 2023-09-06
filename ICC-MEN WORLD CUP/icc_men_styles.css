@@ -537,9 +537,8 @@ body {
     background-color: white;
     height: 44.4px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 80%;
 }
 
 .dibya-present-bar-inside {

@@ -1205,7 +1205,7 @@ footer a:hover {
 .dibya-all-div div {
     width: 50px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
     .dibya-footer-media{
         display: none;
     }

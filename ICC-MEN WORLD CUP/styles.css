@@ -7,34 +7,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-:root{
-    font-family: "Roboto",sans-serif;
-    /* font-size and weight */
-    --font-12px:0.75rem;
-    --font-14px:0.875rem;
-    --font-16px:1rem;
-    --font-18px:1.125rem;
-    --font-24px:1.5rem;
-    /* color */
-    --white-color:rgb(255,255,255);
-    --lightgray-color:rgb(51, 53, 69);
-    --tomato-color:rgb(248, 68, 100);
-    --darkgray-color:rgb(31, 37, 51);
-    --off-white-color:rgb(235,235,235);
-    --background-color1:rgb(245,245,245);
-    --background-color2:rgb(242,245,249);
-    --slate-color:rgb(43, 49, 72);
-    --scroll-button-color:rgb(153, 153, 153);
-    /* text-color */
-    --placeholder-color:rgb(153,153,153);
-    --navbar-font-color:rgb(204, 204, 204);
-    --cards-heading-color:rgb(51, 51, 51);
-    --font-tomato-color:rgb(220, 53, 88);
-    --card-title-color:rgb(34, 34, 34);
-    --card-subtitle-color:rgb(102, 102, 102);
-    --home-text-color:rgb(170, 171, 172);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -51,16 +29,15 @@ body{
 header{
     height:100%;
     width:100%;
-    position: static;
-
 }
 body::-webkit-scrollbar{
     display:none;
 }
 /* <------------------------------header section-------------------------------------------------------------------> */
 /* you have to add this variable in your css file navbar root */
-/* :root{
-    
+:root{
+
+    font-family:"Roboto",sans-serif;
     --lightgray-color:rgb(51, 53, 69);
     --white-color:rgb(255,255,255);
     --placeholder-color:rgb(153,153,153);
@@ -72,7 +49,7 @@ body::-webkit-scrollbar{
     --font-12px:0.75rem;
     --font-14px:0.875rem;
     --font-16px:1rem;
-} */
+}
 .nav_1{
     background-color: var(--lightgray-color);
     display:flex;
@@ -147,7 +124,6 @@ select{
 select option:checked {
     background-color: #555; /* Background color of the selected option */
   }
-
 .fa-caret-down{
     color:var(--white-color);
     transform:scale(0.8);
@@ -168,6 +144,7 @@ form button{
     color:var(--white-color);
     transform:scale(1.5);
 }
+
 
 /* effect */
 .nav_1 img:hover,form span:hover,form button:hover,.fa-bars:hover{
@@ -239,212 +216,113 @@ sup{
 }
 
 
-:root {
-    font-family: "Roboto", sans-serif;
-    /* font-size and weight */
-    --font-12px: 0.75rem;
-    --font-14px: 0.875rem;
-    --font-16px: 1rem;
-    --font-18px: 1.125rem;
-    --font-24px: 1.5rem;
-    /* color */
-    --white-color: rgb(255, 255, 255);
-    --lightgray-color: rgb(51, 53, 69);
-    --tomato-color: rgb(248, 68, 100);
-    --darkgray-color: rgb(31, 37, 51);
-    --off-white-color: rgb(235, 235, 235);
-    --background-color1: rgb(245, 245, 245);
-    --background-color2: rgb(242, 245, 249);
-    --slate-color: rgb(43, 49, 72);
-    --scroll-button-color: rgb(153, 153, 153);
-    /* text-color */
-    --placeholder-color: rgb(153, 153, 153);
-    --navbar-font-color: rgb(204, 204, 204);
-    --cards-heading-color: rgb(51, 51, 51);
-    --font-tomato-color: rgb(220, 53, 88);
-    --card-title-color: rgb(34, 34, 34);
-    --card-subtitle-color: rgb(102, 102, 102);
-    --home-text-color: rgb(170, 171, 172);
-}
 
-/* <------------------------------header section-------------------------------------------------------------------> */
-/* you have to add this variable in your css file navbar root */
-/* :root{
+/* <------------------------------------media query small devices-------------------------------------------------------> */
+
+
+@media screen  and (min-width:320px) and (max-width: 480px){
+
+    header{
+        display: none;
+    }
+}
+@media screen  and (min-width:481px) and (max-width: 768px){
     
-    --lightgray-color:rgb(51, 53, 69);
-    --white-color:rgb(255,255,255);
-    --placeholder-color:rgb(153,153,153);
-    --navbar-font-color:rgb(204, 204, 204);
-    --tomato-color:rgb(248, 68, 100);
-    --darkgray-color:rgb(31, 37, 51);
-  
-
-    --font-12px:0.75rem;
-    --font-14px:0.875rem;
-    --font-16px:1rem;
-} */
-/* nav {
-    min-width: 1440px;
+    header{
+        display: none;
+    }
+    
 }
 
-.nav_1 {
-    background-color: var(--lightgray-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.2rem 10rem;
-    height: 60px;
+
+/* <------------------------------------media query tablet devices-------------------------------------------------------> */
+
+@media screen  and (min-width:769px) and (max-width:1024px){
+    
+    header{
+        display: none;
+    }
+
+   
+}
+
+/* <------------------------------------media query Desktops, large screens-------------------------------------------------------> */
+@media screen and (min-width:1025px) and (max-width:1200px){
+
+    /* navbar */
+    
+    body{
+        width:100vw;
+    }
+    .maincontainer{
+        width:100%;
+        border:2px solid green; 
+    }
+    
+    .nav_1{
+        width:100%;
+    }
+    .nav_width {
+        width:92vw;
+    }
+    form button {
+        padding:0;
+        width:65px;
+        height:25px;
+    }
+    .nav_2_sub2 {
+        display: flex;
+        gap: 1rem;
+    }
+    .nav_2_sub1 {
+        gap: 1rem;
+    }
+    form {
+        gap: 1.3rem;
+    }
+    .dibya-head-mobile{
+        display: none;
+    }
+
 
 }
 
-.nav_1_sub {
-    display: flex;
-    gap: 1rem;
-}
 
-.nav_1 img {
-    height: 35px;
-    object-fit: cover;
-}
 
-.search_bar {
-    width: 37rem;
-    background-color: var(--white-color);
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid rgb(238, 238, 238);
-}
 
-.fa-magnifying-glass {
-    color: rgb(119, 119, 119);
-    margin-right: 0.8rem;
-    margin-left: 5px;
-}
 
-.search_bar input {
-    border: none;
-}
 
-.search_bar span {
-    color: var(--placeholder-color);
-    font-size: var(--font-16px);
-    font-weight: 400;
-    width: 800px;
-}
 
-.select {
-    border: none;
-    background-color: var(--lightgray-color);
-}
 
-form {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-}
 
-form span {
-    display: flex;
-    width: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: var(--navbar-font-color);
-    font-size: var(--font-16px);
-    font-weight: 400;
-}
 
-.fa-caret-down {
-    color: var(--white-color);
-    transform: scale(0.8);
-    margin-left: 10px;
-}
 
-form button {
-    background-color: var(--tomato-color);
-    border: none;
-    color: var(--white-color);
-    font-size: var(--font-12px);
-    letter-spacing: 1px;
-    font-weight: 400;
-    padding: 8px 17px;
-    border-radius: 5px;
-}
 
-.fa-bars {
-    color: var(--white-color);
-    transform: scale(1.5);
-}
 
-/* effect */
-/* .nav_1 img:hover,
-form span:hover,
-form button:hover,
-.fa-bars:hover {
-    cursor: pointer;
-}
 
-.nav_2 {
-    background-color: var(--darkgray-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7rem 10rem;
-}
 
-.nav_2 ul {
-    list-style-type: none;
-}
 
-.nav_2 ul li a {
-    text-decoration: none;
-}
 
-.nav_2_sub1 {
-    display: flex;
-    gap: 1.3rem;
-    margin-left: 4px;
-}
 
-.nav_2_sub1 li a {
-    color: var(--navbar-font-color);
-    font-size: var(--font-16px);
-    transition: .3s;
-}
 
-.nav_2_sub1 li a img {
-    width: 16rem;
-}
 
-.nav_2_sub1 span {
-    color: rgb(231, 54, 77);
-    font-size: 9px;
-    position: relative;
-    bottom: 10px;
-    left: -25px;
-}
 
-.nav_2_sub2 {
-    display: flex;
-    gap: 1.5rem;
-}
 
-.nav_2_sub2 li a {
-    color: var(--white-color);
-    font-size: var(--font-14px);
-}
-/* 
-/* effect */
-/* .nav_2_sub1 li:hover,
-.nav_2_sub2 li:hover,
-.nav_2_sub1 span:hover {
-    cursor: pointer;
-}
 
-.nav_2_sub1 li a:hover {
-    color: var(--white-color);
-} */
-*/ */ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ================================================================================================= */
 
 
@@ -541,7 +419,9 @@ body {
     height: 156.66px;
     width: 940px;
 }
-
+.dibya-head-mobile{
+    display: none;
+}
 
 .dibya-flag-container {
     width: 80%;
@@ -1428,6 +1308,50 @@ footer a:hover {
     .dibya-hr{
         width: 40vw;
     }
+
+
+    .dibya-icc-2023-inside-container{
+        display: none;
+    }
+
+    .dibya-head-mobile{
+        
+        height: 50px;
+        background-color: #2B3148;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        position: fixed;
+        width:92.7%;
+        padding-left: 1rem;
+    }
+    .dibya-head-mobile a{
+        text-decoration: none;
+        color: #DADBDF;
+        font-size: 1rem;
+    }
+    .dibya-head-mobile a i{
+        font-size: 1.5rem;
+    }
+    .dibya-head-mobile-imgage {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .dibya-head-mobile-imgage img{
+        width: 80%;
+        height: 60%;;
+        
+    }
+
+    .dibya-view-all-match img {
+        height: 51.66px;
+        width: 290px;
+        margin-right: 6rem;
+    }
+    
     
 }
 
@@ -1485,6 +1409,53 @@ footer a:hover {
     .dibya-flag-container,.dibya-match-by-venue-image{
         margin: 0;
     }
+    .dibya-icc-2023-inside-container{
+        display: none;
+    }
+
+    .dibya-head-mobile{
+        
+        height: 50px;
+        background-color: #2B3148;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        position: fixed;
+        width:100%;
+        padding-left: 1rem;
+    }
+    .dibya-head-mobile a{
+        text-decoration: none;
+        color: #DADBDF;
+        font-size: 1rem;
+    }
+    .dibya-head-mobile a i{
+        font-size: 1.5rem;
+    }
+    .dibya-head-mobile-imgage {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .dibya-head-mobile-imgage img{
+        width: 80%;
+        height: 60%;;
+        
+    }
+
+    .dibya-view-all-match img {
+        height: 51.66px;
+        width: 290px;
+        margin-right: 6rem;
+    }
+
+
+
+
+
+
     .dibya-flag-heading{
         margin-left: 2rem;
         width: 100%;
@@ -1519,6 +1490,8 @@ footer a:hover {
         display: none;
     }
     
+
+    
     
 }
 
@@ -1531,7 +1504,7 @@ footer a:hover {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: 100vw;
         /* border: 10px solid red; */
         height: auto;
     }
@@ -1551,6 +1524,43 @@ footer a:hover {
     }
     .dibya-view-all-match,.dibya-icc-2023-inside-container{
         margin: 0 25%;
+        
+    }
+    .dibya-icc-2023-inside-container{
+        display: none;
+    }
+
+    .dibya-head-mobile{
+        position: fixed;
+        height: 50px;
+        background-color: #2B3148;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        
+        width:100%;
+        top: 0;
+        padding-left: 1rem;
+    }
+    .dibya-head-mobile a{
+        text-decoration: none;
+        color: #DADBDF;
+        font-size: 1rem;
+    }
+    .dibya-head-mobile a i{
+        font-size: 1.5rem;
+    }
+    .dibya-head-mobile-imgage {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .dibya-head-mobile-imgage img{
+        width: 80%;
+        height: 60%;;
+        
     }
 
     .dibya-view-all-match img {
